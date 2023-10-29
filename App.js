@@ -1,3 +1,26 @@
+import * as React from 'react';
+import { View, Text } from 'react-native';
+import { NavigationContainer } from '@react-navigation/native';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
+
+import RegisterScreen from './Components/Registerscreen';
+import LoginScreen from './Components/Loginscreen';
+const Stack = createNativeStackNavigator();
+
+function App() {
+  return (
+    <NavigationContainer>
+      <Stack.Navigator> 
+        <Stack.Screen options={{headerShown: false}} name = "Regscreen" component={RegisterScreen} />
+        <Stack.Screen options={{headerShown: false}} name = "Loginscreen" component={LoginScreen} />
+      </Stack.Navigator>
+    </NavigationContainer>
+  );
+}
+
+export default App;
+
+/*
 import { StatusBar } from "expo-status-bar";
 import { StyleSheet, Text, View } from "react-native";
 import { Provider } from "react-redux";
@@ -26,3 +49,4 @@ const styles = StyleSheet.create({
     justifyContent: "center",
   },
 });
+*/
