@@ -1,3 +1,9 @@
+// npm install @react-navigation/native --save
+// npm install react-native-reanimated react-native-gesture-handler react-native-screens react-native-safe-area-context @react-native-community/masked-view --save
+//npm install @react-navigation/drawer --save
+// npm install @react-native-async-storage/async-storage 
+// npm install @react-navigation/native-stack
+
 import * as React from 'react';
 import { View, Text } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
