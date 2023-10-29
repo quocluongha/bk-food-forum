@@ -3,8 +3,8 @@ import { View, Text } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
-import RegisterScreen from './Components/Registerscreen';
-import LoginScreen from './Components/Loginscreen';
+import RegisterScreen from '.src/redux/slice/auth/Registerscreen';
+import LoginScreen from '.src/redux/slice/auth/Loginscreen';
 const Stack = createNativeStackNavigator();
 
 function App() {
