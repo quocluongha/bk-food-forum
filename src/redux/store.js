@@ -6,6 +6,7 @@ import { persistCombineReducers, persistStore } from "redux-persist";
 import { authReducer } from "./auth";
 import { profileReducer } from "./profile";
 import { threadReducer } from "./thread";
+import { settingReducer } from "./setting";
 
 const appReducer = persistCombineReducers(
   {
@@ -16,6 +17,7 @@ const appReducer = persistCombineReducers(
     auth: authReducer,
     profile: profileReducer,
     thread: threadReducer,
+    setting: settingReducer,
   }
 );
 
