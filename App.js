@@ -3,14 +3,13 @@ import { StyleSheet, Text, View } from "react-native";
 import { Provider } from "react-redux";
 import { PersistGate } from "redux-persist/integration/react";
 import { store, persistor } from "./src/redux";
-
+import NotiScreen from './src/noti/screens/NotiScreen';
 export default function App() {
   return (
     <Provider store={store}>
       <PersistGate persistor={persistor}>
         <View style={styles.container}>
-          <Text>Open up App.js to start working on your app!</Text>
-          <StatusBar style="auto" />
+        <NotiScreen/>
         </View>
       </PersistGate>
     </Provider>
