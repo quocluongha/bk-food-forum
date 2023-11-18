@@ -127,7 +127,14 @@ const DetailProfile = () => {
           }}
         ></TouchableOpacity>
 
-        <Text>Chỉnh Sửa Hồ Sơ</Text>
+        <Text
+          style={[
+            styles.text,
+            { fontWeight: "500", fontSize: 20, textAlign: "center" }
+          ]}
+        >
+          Chỉnh Sửa Hồ Sơ
+        </Text>
       </View>
 
       <ScrollView>
@@ -292,6 +299,22 @@ const styles = StyleSheet.create({
     marginVertical: 6,
     justifyContent: "center",
     paddingLeft: 8
+  },
+  profileImage: {
+    width: 200,
+    height: 200,
+    borderRadius: 100,
+    overflow: "hidden"
+  },
+  modifyProfileImage: {
+    backgroundColor: red,
+    position: "absolute",
+    bottom: 28,
+    right: 10,
+    padding: 4,
+    height: 20,
+    width: 20,
+    borderRadius: 10
   }
 });
 
