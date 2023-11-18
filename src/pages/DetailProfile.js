@@ -139,14 +139,14 @@ const DetailProfile = () => {
         >
           <TouchableOpacity onPress={handleImageSelection}>
             {/* <Image
-              source={require("./assets/profile.jpg")}
+              source={require("../../assets/profile.jpg")}
               style={styles.image}
               resizeMode="center"
             ></Image> */}
 
             <View style={{ alignSelf: "center" }}>
               <View style={styles.profileImage}>
-                {/* <Image source={require("./assets/profile.jpg")} style={styles.image} resizeMode="center"></Image> */}
+                {/* <Image source={require("../../assets/profile.jpg")} style={styles.image} resizeMode="center"></Image> */}
               </View>
 
               <View style={styles.active}></View>

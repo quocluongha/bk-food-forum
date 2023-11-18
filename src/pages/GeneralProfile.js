@@ -28,7 +28,7 @@ function GeneralProfile(props) {
 
         <View style={{ alignSelf: "center" }}>
           <View style={styles.profileImage}>
-            <Image source={require("./assets/profile.jpg")} style={styles.image} resizeMode="center"></Image>
+            <Image source={require("../../assets/profile.jpg")} style={styles.image} resizeMode="center"></Image>
           </View>
 
           <View style={styles.active}></View>
@@ -80,7 +80,7 @@ function GeneralProfile(props) {
         <View style={{ marginTop: 32 }}>
           <ScrollView horizontal={true} showsHorizontalScrollIndicator={false}>
             <View style={styles.mediaImageContainer}>
-              <Image source={require("./assets/food1.jpg")} style={styles.image} resizeMode="cover"></Image>
+              <Image source={require("../../assets/food1.jpg")} style={styles.image} resizeMode="cover"></Image>
               <Text
                 style={[
                   styles.text,
@@ -91,7 +91,7 @@ function GeneralProfile(props) {
               </Text>
             </View>
             <View style={styles.mediaImageContainer}>
-              <Image source={require("./assets/food2.jpg")} style={styles.image} resizeMode="cover"></Image>
+              <Image source={require("../../assets/food2.jpg")} style={styles.image} resizeMode="cover"></Image>
               <Text
                 style={[
                   styles.text,
@@ -102,7 +102,7 @@ function GeneralProfile(props) {
               </Text>
             </View>
             {/* <View style={styles.mediaImageContainer}>
-                    <Image source={require("./assets/media3.jpg")} style={styles.image} resizeMode="cover"></Image>
+                    <Image source={require("../../assets/media3.jpg")} style={styles.image} resizeMode="cover"></Image>
                     <Text style={[styles.text, { fontWeight: "600", fontSize: 14, textAlign: "center" }]}>Hồ sơ người dùng</Text>
                 </View> */}
           </ScrollView>
