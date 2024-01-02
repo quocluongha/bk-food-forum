@@ -1,27 +1,20 @@
 import React from "react";
 import {
-  SafeAreaView,
-  ScrollView,
-  StatusBar,
-  StyleSheet,
-  Text,
-  useColorScheme,
-  View,
   Image,
   Pressable,
+  SafeAreaView,
+  ScrollView,
+  StyleSheet,
+  View,
 } from "react-native";
+import { Text } from "@rneui/themed";
 import PaginationDot from "react-native-animated-pagination-dot";
 
 function GeneralProfile(props) {
   return (
     <SafeAreaView style={styles.container}>
-      <Text
-        style={[
-          styles.text,
-          { fontWeight: "200", fontSize: 28, textAlign: "center" },
-        ]}
-      >
-        Hồ sơ người dùng
+      <Text variant="titleLarge" style={{ textAlign: "center" }}>
+        Profile
       </Text>
       <ScrollView showsVerticalScrollIndicator={false}>
         <View style={styles.titleBar}></View>
@@ -53,11 +46,7 @@ function GeneralProfile(props) {
             props.navigation.navigate("DetailProfile");
           }}
         >
-          <Text style={styles.modifyButtonText}>Chi Tiết Hồ Sơ</Text>
-        </Pressable>
-
-        <Pressable style={styles.modifyButton}>
-          <Text style={styles.modifyButtonText}>Chi Tiết Hồ Sơ</Text>
+          <Text style={styles.modifyButtonText}>Details</Text>
         </Pressable>
 
         <View style={styles.statsContainer}>

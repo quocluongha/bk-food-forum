@@ -9,7 +9,11 @@ const MainStack = createNativeStackNavigator();
 
 export const MainStackNavigator: React.FC = () => {
   return (
-    <MainStack.Navigator>
+    <MainStack.Navigator
+      screenOptions={{
+        headerBackTitleVisible: false,
+      }}
+    >
       <MainStack.Screen
         name="MainTab"
         component={MainTabNavigator}

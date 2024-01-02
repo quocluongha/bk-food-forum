@@ -5,6 +5,7 @@ import { Bell, GroupIcon, HomeIcon } from "../components/svg";
 import { Group, Home } from "../modules/main/screens";
 import { TabBarIconContainer } from "./components";
 import GeneralProfile from "../pages/GeneralProfile";
+import NotiScreen from "../noti/screens/NotiScreen";
 
 const MainTab = createBottomTabNavigator();
 
@@ -22,6 +23,7 @@ export const MainTabNavigator = () => {
       screenOptions={{
         tabBarShowLabel: false,
         tabBarInactiveTintColor: primary,
+        headerLeftLabelVisible: false,
       }}
     >
       <MainTab.Screen
@@ -86,7 +88,7 @@ export const MainTabNavigator = () => {
       />
       <MainTab.Screen
         name="Notification"
-        component={Blank}
+        component={NotiScreen}
         options={{
           headerShown: false,
           tabBarIcon({ color, focused, size }) {
