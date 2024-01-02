@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "269249231750",
+    "project_id": "bk-food-forum",
+    "storage_bucket": "bk-food-forum.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:269249231750:android:e3436815bfeed09cc10a07",
+        "android_client_info": {
+          "package_name": "com.haquocluong.bkfoodforum"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDxv3AauKSWAi-g7xPKU9S0yE9iNnEFlD8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

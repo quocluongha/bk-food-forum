@@ -7,7 +7,7 @@ import {
   TextInput,
   Modal,
   SafeAreaView,
-  StyleSheet
+  StyleSheet,
 } from "react-native";
 import React, { useState } from "react";
 // import DatePicker, { getFormatedDate } from "react-native-modern-datepicker";
@@ -109,28 +109,28 @@ const DetailProfile = () => {
       style={{
         flex: 1,
         backgroundColor: "white",
-        paddingHorizontal: 22
+        paddingHorizontal: 22,
       }}
     >
       <View
         style={{
           marginHorizontal: 12,
           flexDirection: "row",
-          justifyContent: "center"
+          justifyContent: "center",
         }}
       >
         <TouchableOpacity
           onPress={() => navigation.goBack()}
           style={{
             position: "absolute",
-            left: 0
+            left: 0,
           }}
         ></TouchableOpacity>
 
         <Text
           style={[
             styles.text,
-            { fontWeight: "500", fontSize: 20, textAlign: "center" }
+            { fontWeight: "500", fontSize: 20, textAlign: "center" },
           ]}
         >
           Chỉnh Sửa Hồ Sơ
@@ -141,7 +141,7 @@ const DetailProfile = () => {
         <View
           style={{
             alignItems: "center",
-            marginVertical: 22
+            marginVertical: 22,
           }}
         >
           <TouchableOpacity onPress={handleImageSelection}>
@@ -164,7 +164,7 @@ const DetailProfile = () => {
                 position: "absolute",
                 bottom: 0,
                 right: 10,
-                zIndex: 9999
+                zIndex: 9999,
               }}
             ></View>
           </TouchableOpacity>
@@ -174,7 +174,7 @@ const DetailProfile = () => {
           <View
             style={{
               flexDirection: "column",
-              marginBottom: 6
+              marginBottom: 6,
             }}
           >
             <Text>Name</Text>
@@ -190,7 +190,7 @@ const DetailProfile = () => {
           <View
             style={{
               flexDirection: "column",
-              marginBottom: 6
+              marginBottom: 6,
             }}
           >
             <Text>Email</Text>
@@ -206,7 +206,7 @@ const DetailProfile = () => {
           <View
             style={{
               flexDirection: "column",
-              marginBottom: 6
+              marginBottom: 6,
             }}
           >
             <Text>Password</Text>
@@ -223,7 +223,7 @@ const DetailProfile = () => {
           <View
             style={{
               flexDirection: "column",
-              marginBottom: 6
+              marginBottom: 6,
             }}
           >
             <Text style={styles.h4Text}>Date or Birth</Text>
@@ -239,7 +239,7 @@ const DetailProfile = () => {
         <View
           style={{
             flexDirection: "column",
-            marginBottom: 6
+            marginBottom: 6,
           }}
         >
           <Text style={styles.h4Text}>Country</Text>
@@ -258,12 +258,12 @@ const DetailProfile = () => {
             height: 44,
             borderRadius: 6,
             alignItems: "center",
-            justifyContent: "center"
+            justifyContent: "center",
           }}
         >
           <Text
             style={{
-              color: "white"
+              color: "white",
             }}
           >
             Save Change
@@ -282,13 +282,13 @@ const styles = StyleSheet.create({
     width: 170,
     borderRadius: 85,
     borderWidth: 2,
-    borderColor: "#242760"
+    borderColor: "#242760",
   },
   h4Text: {
-    color: "black"
+    color: "black",
   },
   h3Text: {
-    color: "black"
+    color: "black",
   },
   textBox: {
     height: 44,
@@ -298,24 +298,24 @@ const styles = StyleSheet.create({
     borderRadius: 4,
     marginVertical: 6,
     justifyContent: "center",
-    paddingLeft: 8
+    paddingLeft: 8,
   },
   profileImage: {
     width: 200,
     height: 200,
     borderRadius: 100,
-    overflow: "hidden"
+    overflow: "hidden",
   },
   modifyProfileImage: {
-    backgroundColor: red,
+    backgroundColor: "red",
     position: "absolute",
     bottom: 28,
     right: 10,
     padding: 4,
     height: 20,
     width: 20,
-    borderRadius: 10
-  }
+    borderRadius: 10,
+  },
 });
 
 export default DetailProfile;

@@ -8,9 +8,9 @@ import {
   useColorScheme,
   View,
   Image,
-  Pressable
+  Pressable,
 } from "react-native";
-import PaginationDot from 'react-native-animated-pagination-dot';
+import PaginationDot from "react-native-animated-pagination-dot";
 
 function GeneralProfile(props) {
   return (
@@ -18,7 +18,7 @@ function GeneralProfile(props) {
       <Text
         style={[
           styles.text,
-          { fontWeight: "200", fontSize: 28, textAlign: "center" }
+          { fontWeight: "200", fontSize: 28, textAlign: "center" },
         ]}
       >
         Hồ sơ người dùng
@@ -28,7 +28,11 @@ function GeneralProfile(props) {
 
         <View style={{ alignSelf: "center" }}>
           <View style={styles.profileImage}>
-            <Image source={require("../../assets/profile.jpg")} style={styles.image} resizeMode="center"></Image>
+            <Image
+              source={require("../../assets/profile.jpg")}
+              style={styles.image}
+              resizeMode="center"
+            ></Image>
           </View>
 
           <View style={styles.active}></View>
@@ -45,9 +49,11 @@ function GeneralProfile(props) {
 
         <Pressable
           style={styles.modifyButton}
-          onPress={() => { props.navigation.navigate('DetailProfile') }}
+          onPress={() => {
+            props.navigation.navigate("DetailProfile");
+          }}
         >
-            <Text style={styles.modifyButtonText}>Chi Tiết Hồ Sơ</Text>
+          <Text style={styles.modifyButtonText}>Chi Tiết Hồ Sơ</Text>
         </Pressable>
 
         <Pressable style={styles.modifyButton}>
@@ -65,8 +71,8 @@ function GeneralProfile(props) {
               {
                 borderColor: "#DFD8C8",
                 borderLeftWidth: 1,
-                borderRightWidth: 1
-              }
+                borderRightWidth: 1,
+              },
             ]}
           >
             <Text style={[styles.text, { fontSize: 24 }]}>86</Text>
@@ -80,22 +86,30 @@ function GeneralProfile(props) {
         <View style={{ marginTop: 32 }}>
           <ScrollView horizontal={true} showsHorizontalScrollIndicator={false}>
             <View style={styles.mediaImageContainer}>
-              <Image source={require("../../assets/food1.jpg")} style={styles.image} resizeMode="cover"></Image>
+              <Image
+                source={require("../../assets/food1.jpg")}
+                style={styles.image}
+                resizeMode="cover"
+              ></Image>
               <Text
                 style={[
                   styles.text,
-                  { fontWeight: "600", fontSize: 14, textAlign: "center" }
+                  { fontWeight: "600", fontSize: 14, textAlign: "center" },
                 ]}
               >
                 Pancake sốt đậu gà
               </Text>
             </View>
             <View style={styles.mediaImageContainer}>
-              <Image source={require("../../assets/food2.jpg")} style={styles.image} resizeMode="cover"></Image>
+              <Image
+                source={require("../../assets/food2.jpg")}
+                style={styles.image}
+                resizeMode="cover"
+              ></Image>
               <Text
                 style={[
                   styles.text,
-                  { fontWeight: "600", fontSize: 14, textAlign: "center" }
+                  { fontWeight: "600", fontSize: 14, textAlign: "center" },
                 ]}
               >
                 Bánh mì hạnh nhân
@@ -109,13 +123,8 @@ function GeneralProfile(props) {
         </View>
 
         <View style={{ marginTop: 12, marginLeft: "45%" }}>
-          <PaginationDot
-              activeDotColor={'grey'}
-              curPage={0}
-              maxPage={3}
-          />
+          <PaginationDot activeDotColor={"grey"} curPage={0} maxPage={3} />
         </View>
-
       </ScrollView>
     </SafeAreaView>
   );
@@ -124,47 +133,47 @@ function GeneralProfile(props) {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#FFF"
+    backgroundColor: "#FFF",
   },
   text: {
     fontFamily: "HelveticaNeue",
-    color: "#242760"
+    color: "#242760",
   },
   image: {
     flex: 1,
     height: undefined,
-    width: undefined
+    width: undefined,
   },
   titleBar: {
     flexDirection: "row",
     justifyContent: "space-between",
     marginTop: 24,
-    marginHorizontal: 16
+    marginHorizontal: 16,
   },
   subText: {
     fontSize: 12,
     color: "#242760",
     textTransform: "uppercase",
-    fontWeight: "500"
+    fontWeight: "500",
   },
   profileImage: {
     width: 200,
     height: 200,
     borderRadius: 100,
-    overflow: "hidden"
+    overflow: "hidden",
   },
   modifyButton: {
     width: "40%",
     backgroundColor: "#242760",
     borderRadius: 10,
     marginLeft: "30%",
-    marginTop: 12
+    marginTop: 12,
   },
   modifyButtonText: {
     color: "white",
     fontSize: 16,
     padding: 8,
-    textAlign: "center"
+    textAlign: "center",
   },
   dm: {
     backgroundColor: "#41444B",
@@ -174,7 +183,7 @@ const styles = StyleSheet.create({
     height: 40,
     borderRadius: 20,
     alignItems: "center",
-    justifyContent: "center"
+    justifyContent: "center",
   },
   active: {
     backgroundColor: "#34FFB9",
@@ -184,7 +193,7 @@ const styles = StyleSheet.create({
     padding: 4,
     height: 20,
     width: 20,
-    borderRadius: 10
+    borderRadius: 10,
   },
   add: {
     backgroundColor: "#41444B",
@@ -195,28 +204,28 @@ const styles = StyleSheet.create({
     height: 60,
     borderRadius: 30,
     alignItems: "center",
-    justifyContent: "center"
+    justifyContent: "center",
   },
   infoContainer: {
     alignSelf: "center",
     alignItems: "center",
-    marginTop: 16
+    marginTop: 16,
   },
   statsContainer: {
     flexDirection: "row",
     alignSelf: "center",
-    marginTop: 39
+    marginTop: 39,
   },
   statsBox: {
     alignItems: "center",
-    flex: 1
+    flex: 1,
   },
   mediaImageContainer: {
     width: 180,
     height: 200,
     borderRadius: 12,
     overflow: "hidden",
-    marginHorizontal: 10
+    marginHorizontal: 10,
   },
   mediaCount: {
     backgroundColor: "#41444B",
@@ -232,18 +241,18 @@ const styles = StyleSheet.create({
     shadowColor: "rgba(0, 0, 0, 0.38)",
     shadowOffset: { width: 0, height: 10 },
     shadowRadius: 20,
-    shadowOpacity: 1
+    shadowOpacity: 1,
   },
   recent: {
     marginLeft: 78,
     marginTop: 32,
     marginBottom: 6,
-    fontSize: 10
+    fontSize: 10,
   },
   recentItem: {
     flexDirection: "row",
     alignItems: "flex-start",
-    marginBottom: 16
+    marginBottom: 16,
   },
   activityIndicator: {
     backgroundColor: "#CABFAB",
@@ -252,8 +261,8 @@ const styles = StyleSheet.create({
     width: 12,
     borderRadius: 6,
     marginTop: 3,
-    marginRight: 20
-  }
+    marginRight: 20,
+  },
 });
 
 export default GeneralProfile;
